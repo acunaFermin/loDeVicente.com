@@ -1,0 +1,51 @@
+<app-background></app-background>
+
+<div class="cuerpo">
+  <div class="eventos">
+    <h1>Lo de Vicente - Eventos en Tandil</h1>
+
+    <p>
+      Ese momento tan especial en sus vidas, el primer añito, su bautismo,
+      comunión, recibida o simplemente reunirte y compartir con familiares y
+      amigos... serán inolvidables en nuestro quincho <b>Lo de Vicente.</b> 4
+      años han pasado brindándote espacio y atención. Agradecemos enormemente a
+      todos los que nos han elegido y confiado en nosotros.
+    </p>
+    <br />
+
+    <h3>Nuestros Servicios</h3>
+    <br />
+    <p>
+      Quincho equipado con capacidad para <b>30 personas</b>. Vajilla y
+      mantelería completa. Pileta en temporada (noviembre/marzo). Parrilla
+      techada.<b> Espacio verde con fogón, parrilla, disco y plancheta.</b>
+      Bancos, reposeras y sombrillas para disfrutar del jardín. Dos baños y
+      antebaño. Cocina completa con todos los electrodomésticos. <b>Wifi.</b> Sí
+      gustas quedarte cuenta con una habitación con cama matrimonial y simple y
+      sofá cama doble en el comedor. Te recibimos durante todo el año... no
+      dudes en contactarnos!!
+    </p>
+  </div>
+
+  <app-ampliar
+    [arrayZoom]="imagenZoom"
+    *ngIf="zoom"
+    (cerrar)="cerrarZoom($event)"
+    [imgIndex]="index"
+    [imgArray]="imagenes"
+    [tipo]="tipo"
+  ></app-ampliar>
+
+  <div class="galeria">
+    <div class="imagen" *ngFor="let img of imagen; let i = index">
+      <div class="index">{{ i + 1 }} - {{ img }}</div>
+      <img
+        src="{{ ruta }}{{ img }}"
+        alt="alojamiento-tandil-Lo-de-Vicente-jardin"
+        (click)="ampliar(ruta + img, i, imagen)"
+      />
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

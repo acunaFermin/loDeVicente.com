@@ -1,0 +1,56 @@
+<app-background></app-background>
+
+<div class="cuerpo">
+  <div class="eventos">
+    <h1>Lo de Vicente - Alojamiento en Tandil</h1>
+    <p>
+      ¿Buscás hospedarte en Tandil? Te ofrecemos alojamiento
+      <b>hasta 5 personas</b>, para turistas y lugareños que busquen descansar y
+      disfrutar de las bellezas de nuestra ciudad, la calidez y confort de
+      nuestro espacio. Podés encontrarnos a 2 km del Cerro Movediza y a 2 km del
+      principal centro comercial, brindándote privacidad y confort para que tu
+      estadía sea inolvidable.
+    </p>
+    <br />
+    <h3>Nuestros servicios</h3>
+    <br />
+    <p>
+      <b>Wifi gratuito.</b> Espacio verde de uso privado con
+      <b
+        >parrilla afuera y adentro... si llueve no te perdes el asadito!,
+        también fogón y disco.</b
+      >
+      Entrada para auto de uso compartido. Pileta en temporada (de noviembre a
+      marzo). Habitación para 3 personas con matrimonial y simple,
+      <b>A/C frío calor y smart(Netflix)</b> 2 baños y antebaño.
+      <b
+        >Cocina equipada con microondas, pava eléctrica, tostadora y freezer.</b
+      >
+      Amplio comedor con sofá cama doble, calefactor y ventilador. Te recibimos
+      durante todo el año...
+      <b>contactanos!!</b>
+    </p>
+  </div>
+
+  <app-ampliar
+    [arrayZoom]="imagenZoom"
+    *ngIf="zoom"
+    (cerrar)="cerrarZoom($event)"
+    [imgIndex]="index"
+    [imgArray]="imagenes"
+    [tipo]="tipo"
+  ></app-ampliar>
+
+  <div class="galeria">
+    <div class="imagen" *ngFor="let img of imagen; let i = index">
+      <div class="index">{{ i + 1 }} - {{ img }}</div>
+      <img
+        src="{{ ruta }}{{ img }}"
+        alt="alojamiento-tandil-Lo-de-Vicente-jardin"
+        width="1600px"
+        (click)="ampliar(ruta + img, i, imagen)"
+      />
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

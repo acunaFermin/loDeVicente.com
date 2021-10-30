@@ -1,0 +1,87 @@
+.logo-inic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  object-fit: cover;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-inic img {
+  background-color: rgb(98, 111, 145);
+  margin-top: 2px;
+  width: 50%;
+  height: fit-content;
+}
+
+@media (max-width: 800px) {
+  .logo-inic {
+    width: 80vw;
+  }
+  .logo-inic img {
+    width: 90%;
+  }
+}
+
+.inicio-card {
+  margin: 10px;
+  width: 60vw;
+}
+
+img {
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+p,
+h1 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+mat-card-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.boton {
+  margin: 5px;
+}
+
+a {
+  width: 230px;
+  margin-bottom: 5px;
+}
+
+.wapp {
+  background-color: #128c7e;
+}
+
+@media (max-width: 800px) {
+  .inicio-card {
+    margin: 10px;
+    width: 80vw;
+  }
+
+  img {
+    max-height: 90vh;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}

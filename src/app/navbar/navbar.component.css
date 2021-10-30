@@ -1,0 +1,51 @@
+/*barra de navegacion principal*/
+
+.nav-bar {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  width: 100%;
+  height: 25px;
+  background-color: rgb(98, 111, 145);
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  height: 55px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: blanchedalmond;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: rgb(135, 154, 206);
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+}
+
+.nav-item-division {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .nav-bar {
+    font-size: 1em;
+  }
+  .nav-link:hover {
+    font-size: 1.1em;
+  }
+}

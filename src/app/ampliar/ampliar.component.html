@@ -1,0 +1,25 @@
+<div class="close" (click)="close()">
+  <img src="assets/img/close-icon.png" alt="close" />
+</div>
+
+<div #hola class="ampliar">
+  <div class="boton izq">
+    <img (click)="izq(500)" src="assets/img/izq.svg" alt="logo-izq" />
+  </div>
+
+  <div
+    [style.transition]="this.transitionValue"
+    [style.left]="this.left"
+    class="image"
+  >
+    <img
+      id="idImagen{{ i }}"
+      *ngFor="let img of arrayZoom; let i = index"
+      src="{{ img }}"
+    />
+  </div>
+
+  <div class="boton derecha">
+    <img (click)="derecha(500)" src="assets/img/derecha.svg" alt="logo-dere" />
+  </div>
+</div>

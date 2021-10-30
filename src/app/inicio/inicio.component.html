@@ -1,0 +1,98 @@
+<app-background> </app-background>
+<div class="cuerpo">
+  <mat-card class="logo-inic">
+    <div class="logo-img">
+      <img
+        mat-card-image
+        src="/assets/img/lo-de-vicente-logo.png"
+        alt="Lo de Vicente - logo"
+      />
+    </div>
+
+    <mat-card-content>
+      <h1>¿Buscás cabaña en Tandil?</h1>
+      <p>
+        Te ofrecemos alojamiento hasta 5 personas, para turistas y lugareños que
+        busquen descansar y disfrutar de las bellezas de nuestra ciudad, la
+        calidez y confort de nuestro espacio. Venite a Lo de Vicente!
+      </p></mat-card-content
+    >
+    <div class="botones">
+      <div class="boton">
+        <a (click)="navegar()" color="accent" mat-raised-button>
+          <mat-icon aria-hidden="false" aria-label="favorite"
+            >favorite</mat-icon
+          >
+          Quiero saber mas!
+        </a>
+      </div>
+
+      <div class="boton">
+        <a href="tel:+542494632892" color="primary" mat-raised-button>
+          <mat-icon aria-hidden="false" aria-label="phone_in_talk"
+            >phone_in_talk</mat-icon
+          >
+          Me quiero contactar!
+        </a>
+      </div>
+
+      <div class="boton">
+        <a
+          href="https://wa.me/542494632892?text="
+          class="wapp"
+          color="primary"
+          mat-raised-button
+        >
+          <mat-icon aria-hidden="false" aria-label="whatsapp">whatsapp</mat-icon
+          >Quiero mandar un whatsapp!
+        </a>
+      </div>
+    </div>
+  </mat-card>
+
+  <div *ngFor="let imagen of imagenes">
+    <mat-card class="inicio-card">
+      <img mat-card-image src="{{ imagen.img }}" alt="{{ imagen.alt }}" />
+      <mat-card-content>
+        <p>
+          {{ imagen.desc }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="botones">
+          <div class="boton">
+            <a (click)="navegar()" color="accent" mat-raised-button>
+              <mat-icon aria-hidden="false" aria-label="favorite"
+                >favorite</mat-icon
+              >
+              Quiero saber mas!
+            </a>
+          </div>
+
+          <div class="boton">
+            <a href="tel:+542494632892" color="primary" mat-raised-button>
+              <mat-icon aria-hidden="false" aria-label="phone_in_talk"
+                >phone_in_talk</mat-icon
+              >
+              Me quiero contactar!
+            </a>
+          </div>
+
+          <div class="boton">
+            <a
+              href="https://wa.me/542494632892?text="
+              class="wapp"
+              color="primary"
+              mat-raised-button
+            >
+              <mat-icon aria-hidden="false" aria-label="whatsapp"
+                >whatsapp</mat-icon
+              >Quiero mandar un whatsapp!
+            </a>
+          </div>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.fondo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/img/fondo-lago-del-fuerte.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*estilo de fondo para seccion eventos*/
+.fondo-eventos {
+  position: fixed;
+}
+
+.fondo-efecto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+.pq {
+  padding-top: 4px;
+  padding-right: 1px;
+}
+
+/*galeria eventos*/
+
+.cuerpo {
+  position: relative;
+  top: 100px;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.eventos h1 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+  font-weight: lighter;
+}
+
+.eventos {
+  background-color: white;
+  width: 50vw;
+  text-align: start;
+  padding: 5vh;
+  padding-top: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  line-height: 45px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .eventos {
+    font-size: 1.1em;
+    line-height: 25px;
+    word-spacing: 1.5px;
+    letter-spacing: 1.5px;
+    width: 80vw;
+  }
+
+  .eventos h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 1vh;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
