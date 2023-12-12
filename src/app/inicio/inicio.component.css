@@ -39,12 +39,6 @@ img {
   object-position: bottom;
 }
 
-p,
-h1 {
-  text-align: center;
-  font-size: 1.2em;
-}
-
 mat-card-actions {
   display: flex;
   flex-direction: row;
@@ -59,6 +53,8 @@ mat-card-actions {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .boton {
   margin: 5px;
