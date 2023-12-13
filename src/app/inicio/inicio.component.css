@@ -29,14 +29,8 @@
 }
 
 .inicio-card {
-  margin: 10px;
+  /* margin: 10px; */
   width: 60vw;
-}
-
-img {
-  max-height: 80vh;
-  object-fit: cover;
-  object-position: bottom;
 }
 
 mat-card-actions {
@@ -60,24 +54,13 @@ mat-card-actions {
   margin: 5px;
 }
 
-a {
-  width: 230px;
-  margin-bottom: 5px;
-}
-
 .wapp {
   background-color: #128c7e;
 }
 
 @media (max-width: 800px) {
   .inicio-card {
-    margin: 10px;
+    /* margin: 10px; */
     width: 80vw;
-  }
-
-  img {
-    max-height: 90vh;
-    object-fit: cover;
-    object-position: bottom;
   }
 }
