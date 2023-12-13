@@ -10,33 +10,80 @@ export class ImagenesService {
     imgInicio = [
     {
       img: './assets/img/img-inicio/camas_nido.jpg',
-      desc: 'Cocina equipada con vajilla completa, cocina, parrilla, microondas, pava eléctrica, tostadora y freezer.',
-      alt: 'Lo de Vicente - cocina completamente equipada',
+      desc: 'Contamos con 4 camas (2 camas nido) muy comfortables y comodas. Las camas inferiores tienen rueditas y son muy faciles de armar. Se provee la blanqueria, abrigo y almohadas.',
+      alt: 'camas_nido.jpg',
     },
     {
       img: './assets/img/img-inicio/jardin_mesas.jpg',
-      desc: 'Durante la temporada de verano, podes usar la pileta. Un tanque australiano de 5 metros de diametro y 80cm de profundidad.',
-      alt: 'Lo de Vicente - pileta',
+      desc: 'El jardin cuenta con un juego de mesas y bancos, reposeras, parrilla, sombrilla y sombra natural.',
+      alt: 'jardin_mesas.jpg',
     },
     {
       img: './assets/img/img-inicio/mesas_salon.jpg',
-      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
-      alt: 'Lo de Vicente - jardin al aire libre',
+      desc: 'El salón comedor cuenta con una amplia mesa con 8 sillas. Cuenta con calefator y ventilador.',
+      alt: 'mesas_salon.jpg',
     },
     {
       img: './assets/img/img-inicio/parrilla.jpg',
-      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
-      alt: 'Lo de Vicente - jardin al aire libre',
+      desc: 'La cocina cuenta con una parrilla interna, con lo que se puede cocinar a las brazas los días de frío o de lluvia.',
+      alt: 'parrilla.jpg',
     },
     {
       img: './assets/img/img-inicio/pileta_vereda.jpg',
-      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
-      alt: 'Lo de Vicente - jardin al aire libre',
+      desc: 'Podrás disfrutar de nuestra pileta en verano.',
+      alt: 'pileta_vereda.jpg',
     },
     {
       img: './assets/img/img-inicio/salon_camas.jpg',
-      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
-      alt: 'Lo de Vicente - jardin al aire libre',
+      desc: 'Nuestro salón cuenta con smart tv, donde podrás disfrutar de contenido de tu preferencia.',
+      alt: 'salon_camas.jpg',
+    },
+
+
+    {
+      img: './assets/img/img-inicio/antebaño-espejo.jpg',
+      desc: 'Contamos con antebaño muy cómodo y práctico.',
+      alt: 'antebaño-espejo.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/baño-ducha.jpg',
+      desc: 'Contamos con dos baños, uno con ducha.',
+      alt: 'baño-ducha.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/cama-dos-plazas.jpg',
+      desc: 'Cama de dos plazas en la planta alta',
+      alt: 'cama-dos-plazas.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/mesa-cocina.jpg',
+      desc: 'Desayunador en la cocina',
+      alt: 'mesa-cocina.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/mesada-cocina.jpg',
+      desc: 'Cocina totalmente equipada, con amplia mesada. Cuenta con pava eléctrica, microondas, equipo de música. Vajilla completa.',
+      alt: 'mesada-cocina.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/mesada-microondas.jpg',
+      desc: 'Cocina y horno a gas. Cuenta con tablas de madera, y elementos varios de cocina.',
+      alt: 'mesada-microondas.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/parrilla-afuera.jpg',
+      desc: 'El jardín cuenta con amplio fogón, con parrilla y asador, y elementos varios como atizador y palita.',
+      alt: 'parrilla-afuera.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/sofa-cama-arriba.jpg',
+      desc: 'La habitación de arriba cuenta con un sofa cama.',
+      alt: 'sofa-cama-arriba.jpg',
+    },
+    {
+      img: './assets/img/img-inicio/tele-arriba.jpg',
+      desc: 'Smart tv en la habitación de arriba.',
+      alt: 'tele-arriba.jpg',
     },
   ];
 
