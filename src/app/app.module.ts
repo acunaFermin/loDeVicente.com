@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { BotonesContactoComponent } from './botones-contacto/botones-contacto.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
     ButtonsComponent,
     BackgroundComponent,
     AmpliarComponent,
+    BotonesContactoComponent,
   ],
   imports: [
     BrowserModule,

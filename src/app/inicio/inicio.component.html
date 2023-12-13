@@ -19,26 +19,7 @@
       entretenimiento. Para consultas y reservas, <b>contáctanos al 2494632892</b>. ¡Esperamos que 
       tengas una hermosa estadía!
     </p>
-
-    <div class="botones">
-      <div class="boton">
-        <a href="tel:+542494632892" color="primary" mat-raised-button>
-          <mat-icon aria-hidden="false" aria-label="phone_in_talk"
-            >phone_in_talk</mat-icon
-          >
-          Llamanos!
-        </a>
-      </div>
-      
-      <a  style="display: flex; align-items: center; justify-content: center; background-color: #a5e0ae; padding: 4px; border-radius: 4px; font-weight: bold; color: #303030;" 
-        href="https://wa.me/542494632892?text=">
-        <img style="width: 26px; background-color: transparent; margin-right: 4px;"
-          src="assets/img/img-redes-sociales/whatsapp-logo-4-1.png"
-          alt="logo-whatsapp"
-        />
-        Contactanos!
-      </a>
-    </div>
+    <app-botones-contacto></app-botones-contacto>
   </mat-card>
 
 
@@ -54,30 +35,11 @@
       overflow: hidden;
       box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3), 0 8px 16px rgba(255, 255, 255, 0.3);
     ">
-      
       <img style="width: 100%;" src="{{ imagen.img }}" alt="{{ imagen.alt }}" />
-      <p>
+      <p style="margin: 16px; text-align: center;">
         {{ imagen.desc }}
       </p>
-      <div class="botones">
-        <div class="boton">
-          <a href="tel:+542494632892" color="primary" mat-raised-button>
-            <mat-icon aria-hidden="false" aria-label="phone_in_talk"
-              >phone_in_talk</mat-icon
-            >
-            Llamanos!
-          </a>
-        </div>
-        
-        <a  style="display: flex; align-items: center; justify-content: center; background-color: #a5e0ae; padding: 4px; border-radius: 4px; font-weight: bold; color: #303030;" 
-          href="https://wa.me/542494632892?text=">
-          <img style="width: 26px; background-color: transparent; margin-right: 4px;"
-            src="assets/img/img-redes-sociales/whatsapp-logo-4-1.png"
-            alt="logo-whatsapp"
-          />
-          Contactanos!
-        </a>
-      </div>
+      <app-botones-contacto></app-botones-contacto>
     </div>
     </div>
 

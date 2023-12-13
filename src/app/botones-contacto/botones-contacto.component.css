@@ -1,0 +1,10 @@
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
