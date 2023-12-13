@@ -9,13 +9,13 @@
       />
     </div>
 
-    <h1>¿Buscás cabaña en Tandil?</h1>
-    <p class="mt-4">
+    <h1 style="font-size: 32px;">¿Buscás cabaña en Tandil?</h1>
+    <p style="margin-top: 16px;">
       ¡Bienvenido a nuestro cabaña para <b>7 personas</b>, a solo 10 minutos del centro comercial! 
       En la planta superior, hay una habitación para 3 personas con TV y aire. El comedor 
       cuenta con 2 camas nido individuales, TV y ventilador. La cocina está totalmente 
       equipada con desayunador y vajilla. Dispone de <b>2 baños y antebaño</b>. En el jardín exterior, 
-      disfruta de <b>parrilla, fogón, pileta y espacio verde</b>. Wifi y plataformas de TV para tu 
+      disfrutá de <b>parrilla, fogón, pileta y espacio verde</b>. Wifi y plataformas de TV para tu 
       entretenimiento. Para consultas y reservas, <b>contáctanos al 2494632892</b>. ¡Esperamos que 
       tengas una hermosa estadía!
     </p>
@@ -26,23 +26,21 @@
           <mat-icon aria-hidden="false" aria-label="phone_in_talk"
             >phone_in_talk</mat-icon
           >
-          Me quiero contactar!
+          Llamanos!
         </a>
       </div>
-
-      <div class="boton">
-        <a
-          href="https://wa.me/542494632892?text="
-          class="wapp"
-          color="primary"
-          mat-raised-button
-        >
-          <mat-icon aria-hidden="false" aria-label="whatsapp">whatsapp</mat-icon
-          >Contactanos!
-        </a>
-      </div>
+      
+      <a  style="display: flex; align-items: center; justify-content: center; background-color: #a5e0ae; padding: 4px; border-radius: 4px; font-weight: bold; color: #303030;" 
+        href="https://wa.me/542494632892?text=">
+        <img style="width: 26px; background-color: transparent; margin-right: 4px;"
+          src="assets/img/img-redes-sociales/whatsapp-logo-4-1.png"
+          alt="logo-whatsapp"
+        />
+        Contactanos!
+      </a>
     </div>
   </mat-card>
+
 
   <div *ngFor="let imagen of imagenes">
     <mat-card class="inicio-card">
@@ -55,35 +53,22 @@
       <mat-card-actions>
         <div class="botones">
           <div class="boton">
-            <a (click)="navegar()" color="accent" mat-raised-button>
-              <mat-icon aria-hidden="false" aria-label="favorite"
-                >favorite</mat-icon
-              >
-              Quiero saber mas!
-            </a>
-          </div>
-
-          <div class="boton">
             <a href="tel:+542494632892" color="primary" mat-raised-button>
               <mat-icon aria-hidden="false" aria-label="phone_in_talk"
                 >phone_in_talk</mat-icon
               >
-              Me quiero contactar!
+              Llamanos!
             </a>
           </div>
-
-          <div class="boton">
-            <a
-              href="https://wa.me/542494632892?text="
-              class="wapp"
-              color="primary"
-              mat-raised-button
-            >
-              <mat-icon aria-hidden="false" aria-label="whatsapp"
-                >whatsapp</mat-icon
-              >Quiero mandar un whatsapp!
-            </a>
-          </div>
+          
+          <a  style="display: flex; align-items: center; justify-content: center; background-color: #a5e0ae; padding: 4px; border-radius: 4px; font-weight: bold; color: #303030;" 
+            href="https://wa.me/542494632892?text=">
+            <img style="width: 26px; background-color: transparent; margin-right: 4px;"
+              src="assets/img/img-redes-sociales/whatsapp-logo-4-1.png"
+              alt="logo-whatsapp"
+            />
+            Contactanos!
+          </a>
         </div>
       </mat-card-actions>
     </mat-card>

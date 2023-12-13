@@ -7,19 +7,19 @@ export class ImagenesService {
   rutaEstadias: string = './assets/img/img-estadias/';
   rutaEventos: string = './assets/img/img-eventos/';
 
-  imgInicio = [
+    imgInicio = [
     {
-      img: './assets/img/img-estadias/cocina.png',
+      img: './assets/img/img-inicio/camas_nido.jpg',
       desc: 'Cocina equipada con vajilla completa, cocina, parrilla, microondas, pava eléctrica, tostadora y freezer.',
       alt: 'Lo de Vicente - cocina completamente equipada',
     },
     {
-      img: './assets/img/img-eventos/celebraciones/pileta-chicos-2.jpeg',
+      img: './assets/img/img-inicio/camas_nido.jpg',
       desc: 'Durante la temporada de verano, podes usar la pileta. Un tanque australiano de 5 metros de diametro y 80cm de profundidad.',
       alt: 'Lo de Vicente - pileta',
     },
     {
-      img: './assets/img/img-estadias/repos.jpeg',
+      img: './assets/img/img-inicio/camas_nido.jpg',
       desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
       alt: 'Lo de Vicente - jardin al aire libre',
     },
