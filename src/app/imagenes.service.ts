@@ -14,12 +14,27 @@ export class ImagenesService {
       alt: 'Lo de Vicente - cocina completamente equipada',
     },
     {
-      img: './assets/img/img-inicio/camas_nido.jpg',
+      img: './assets/img/img-inicio/jardin_mesas.jpg',
       desc: 'Durante la temporada de verano, podes usar la pileta. Un tanque australiano de 5 metros de diametro y 80cm de profundidad.',
       alt: 'Lo de Vicente - pileta',
     },
     {
-      img: './assets/img/img-inicio/camas_nido.jpg',
+      img: './assets/img/img-inicio/mesas_salon.jpg',
+      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
+      alt: 'Lo de Vicente - jardin al aire libre',
+    },
+    {
+      img: './assets/img/img-inicio/parrilla.jpg',
+      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
+      alt: 'Lo de Vicente - jardin al aire libre',
+    },
+    {
+      img: './assets/img/img-inicio/pileta_vereda.jpg',
+      desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
+      alt: 'Lo de Vicente - jardin al aire libre',
+    },
+    {
+      img: './assets/img/img-inicio/salon_camas.jpg',
       desc: 'Jardín para disfrutar del aire fresco, con reposeras y mesas para el mate. Lo de Vicente esta ubicado en una zona tranquila de la ciudad.',
       alt: 'Lo de Vicente - jardin al aire libre',
     },
