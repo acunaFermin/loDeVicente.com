@@ -56,10 +56,22 @@ jobs:
     - name: Upload dist via SCP
       uses: appleboy/scp-action@v0.1.7
       with:
+          switches: -avzr --delete
+          path: dist/vicente/
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT || 22 }}
-          source: "dist/vicente/**"
-          target: "${{ secrets.DEPLOY_DIR }}"
+          target: ${{ secrets.DEPLOY_DIR }}
           overwrite: true
+          
+    - name: Verify deploy
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            ls -la "${{ secrets.DEPLOY_DIR }}"
+
