@@ -74,4 +74,4 @@ jobs:
           script_stop: true
           script: |
             echo "Reiniciando configuración de nginx..."
-            systemctl reload nginx
+            sudo -n /usr/bin/systemctl reload nginx
