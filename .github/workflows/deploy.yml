@@ -30,7 +30,7 @@ jobs:
         cache: 'npm'
     
     - name: Install deps (clean)
-    - run: npm ci
+      run: npm ci
     
     - name: Build Angular (prod)
-    - run: npx ng build --configuration production
+      run: npx ng build --configuration production
