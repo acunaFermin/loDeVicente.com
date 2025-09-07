@@ -1,6 +1,6 @@
 {
-  "name": "vicente",
-  "version": "0.0.0",
+  "name": "lo-de-vicente",
+  "version": "1.2.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

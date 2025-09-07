@@ -44,11 +44,6 @@ export class ImagenesService {
       alt: 'mesada-microondas.jpg',
     },
     {
-      img: `${this.getImagesPath()}/parrilla.jpg`,
-      desc: 'La cocina cuenta con una parrilla interna, con lo que se puede cocinar a las brazas los días de frío o de lluvia.',
-      alt: 'parrilla.jpg',
-    },
-    {
       img: `${this.getImagesPath()}/pileta_vereda.jpg`,
       desc: 'Podrás disfrutar de nuestra pileta en verano.',
       alt: 'pileta_vereda.jpg',
@@ -57,11 +52,6 @@ export class ImagenesService {
       img: `${this.getImagesPath()}/jardin_mesas.jpg`,
       desc: 'El jardin cuenta con un juego de mesas y bancos, reposeras, parrilla, sombrilla y sombra natural.',
       alt: 'jardin_mesas.jpg',
-    },
-    {
-      img: `${this.getImagesPath()}/parrilla-afuera.jpg`,
-      desc: 'El jardín cuenta con amplio fogón, con parrilla y asador, y elementos varios como atizador y palita.',
-      alt: 'parrilla-afuera.jpg',
     },
     {
       img: `${this.getImagesPath()}/antebaño-espejo.jpg`,
@@ -82,11 +72,6 @@ export class ImagenesService {
       img: `${this.getImagesPath()}/cama-dos-plazas.jpg`,
       desc: 'Cama de dos plazas en la planta alta',
       alt: 'cama-dos-plazas.jpg',
-    },
-    {
-      img: `${this.getImagesPath()}/sofa-cama-arriba.jpg`,
-      desc: 'La habitación de arriba cuenta con un sofa cama.',
-      alt: 'sofa-cama-arriba.jpg',
     },
     {
       img: `${this.getImagesPath()}/tele-arriba.jpg`,
