@@ -63,3 +63,15 @@ jobs:
           source: "dist/vicente/**"
           target: "${{ secrets.DEPLOY_DIR }}"
           overwrite: true
+
+    - name: Reload nginx
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script_stop: true
+          script: |
+            echo "Reiniciando configuración de nginx..."
+            sudo -n systemctl reload nginx
