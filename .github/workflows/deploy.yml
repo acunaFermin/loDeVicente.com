@@ -60,6 +60,18 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT || 22 }}
+          target: ${{ secrets.DEPLOY_DIR }}
           source: "dist/vicente/**"
-          target: "${{ secrets.DEPLOY_DIR }}"
+          strip_components: 2
           overwrite: true
+          
+    - name: Verify deploy
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            ls -la "${{ secrets.DEPLOY_DIR }}"
+
