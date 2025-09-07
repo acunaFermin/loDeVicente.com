@@ -13,6 +13,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    environment:
+      name: env
 
     strategy:
       matrix:
@@ -50,3 +52,14 @@ jobs:
           git push origin main
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+    - name: Upload dist via SCP
+      uses: appleboy/scp-action@v0.1.7
+      with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          source: "dist/vicente/**"
+          target: "${{ secrets.DEPLOY_DIR }}"
+          overwrite: true
