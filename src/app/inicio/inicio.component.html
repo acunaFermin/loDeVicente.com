@@ -25,7 +25,7 @@
 
 
   <div 
-    style="padding: 8px;"
+    style="padding: 8px; margin-bottom: 32px;"
     *ngFor="let imagen of imagenes">
     
     <div style="
@@ -34,7 +34,6 @@
       margin-top: 32px;
       border-radius: 32px;  
       overflow: hidden;
-      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3), 0 8px 16px rgba(255, 255, 255, 0.3);
     ">
       <img style="width: 100%;" src="{{ imagen.img }}" alt="{{ imagen.alt }}" />
       <p style="margin: 16px; text-align: center;">
