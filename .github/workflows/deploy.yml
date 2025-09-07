@@ -34,3 +34,19 @@ jobs:
     
     - name: Build Angular (prod)
       run: npx ng build --configuration production
+
+    - name: Commit dist folder
+      run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # forza añadir dist aunque esté en .gitignore
+          git add -f dist
+
+          # si no hay cambios, salir
+          git diff --cached --quiet && echo "No hay cambios en dist" && exit 0
+
+          git commit -m "chore: update dist [skip ci]"
+          git push origin main
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
