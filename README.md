@@ -1,30 +1,34 @@
-# Vicente
+# Lo de Vicente — lodevicente.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+Sitio de la cabaña y quincho para eventos en Tandil. Angular 22 con **prerenderizado estático** (SSG): cada página se genera como HTML completo al compilar, así Google indexa todo el contenido sin ejecutar JavaScript.
 
-## Development server
+## Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Requiere Node 22 o superior (con nvm: `nvm use 24`).
 
-## Code scaffolding
+```bash
+npm install
+npm start        # http://localhost:4200
+npm run build    # genera dist/vicente/browser
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Estructura
 
-## Build
+- `src/app/paginas/` — Inicio, Alojamiento (`/estadias`), Eventos y Contacto.
+- `src/app/data/sitio.ts` — teléfono, WhatsApp, email, redes, dirección y mapa. **Para cambiar un dato de contacto, editarlo acá.**
+- `src/app/data/galerias.ts` — qué fotos aparecen en cada galería, con su texto alternativo y descripción.
+- `src/app/data/fotos.ts` — dimensiones de cada foto (generado).
+- `src/app/app.routes.ts` — título y descripción de cada página para Google.
+- `src/index.html` — Google Analytics y datos estructurados (schema.org) del negocio.
+- `public/img/` — fotos en WebP en tres anchos: `<nombre>-480.webp`, `-960.webp` y `-1600.webp`.
+- `public/sitemap.xml` y `public/robots.txt` — si se agrega una página, sumarla al sitemap.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Agregar una foto
 
-## Running unit tests
+1. Exportarla en WebP con los tres anchos (480, 960 y 1600 px) y guardarlas en `public/img/` como `mi-foto-480.webp`, etc.
+2. Agregar `'mi-foto': { w: <ancho original>, h: <alto original> }` en `src/app/data/fotos.ts`.
+3. Sumarla a la galería que corresponda en `src/app/data/galerias.ts`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Despliegue
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-ng build --base-href="./"
+Al hacer push a `main`, GitHub Actions compila el proyecto y sube `dist/vicente/browser` al VPS por SCP (`.github/workflows/deploy.yml`).
