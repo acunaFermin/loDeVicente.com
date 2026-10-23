@@ -2,7 +2,6 @@
   "routes": {
     "/": {},
     "/contacto": {},
-    "/estadias": {},
-    "/eventos": {}
+    "/estadias": {}
   }
 }
