@@ -46,13 +46,13 @@ import { Mapa } from '../shared/mapa';
 
       <div class="grid h-[26rem] grid-cols-5 grid-rows-2 gap-3 sm:h-[34rem] sm:gap-4">
         <div class="relative col-span-3 row-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
-          <img ngSrc="cabana-pileta" alt="Pileta de la cabaña Lo de Vicente en Tandil" fill priority sizes="(min-width: 1024px) 30vw, 60vw" class="object-cover" />
+          <img ngSrc="pileta" alt="Pileta de la cabaña Lo de Vicente en Tandil" fill priority sizes="(min-width: 1024px) 30vw, 60vw" class="object-cover" />
         </div>
         <div class="relative col-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
-          <img ngSrc="cabana-jardin-mesas" alt="Jardín con mesas y bancos" fill priority sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
+          <img ngSrc="jardin-mesas" alt="Jardín con mesas y bancos" fill priority sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
         </div>
         <div class="relative col-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
-          <img ngSrc="cabana-salon-comedor-camas" alt="Salón comedor de la cabaña" fill sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
+          <img ngSrc="salon-comedor-camas" alt="Salón comedor de la cabaña" fill sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
         </div>
       </div>
     </section>
@@ -152,7 +152,7 @@ import { Mapa } from '../shared/mapa';
     <!-- Nosotros -->
     <section class="contenedor grid items-center gap-10 py-16 sm:py-24 md:grid-cols-[0.8fr_1fr] md:gap-16">
       <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-arena">
-        <img ngSrc="exterior-frente-cabana" alt="Frente de la cabaña Lo de Vicente" fill sizes="(min-width: 768px) 40vw, 100vw" class="object-cover" />
+        <img ngSrc="cartel-lo-de-vicente" alt="Cartel de Lo de Vicente en el jardín" fill sizes="(min-width: 768px) 40vw, 100vw" class="object-cover" />
       </div>
       <div>
         <p class="etiqueta">Nosotros</p>
@@ -173,17 +173,18 @@ import { Mapa } from '../shared/mapa';
 export class Inicio {
   protected readonly sitio = SITIO;
 
+  // 9 fotos para el mosaico (la primera va destacada).
   protected readonly destacadas = [
-    FOTOS_EXTERIOR[0],
-    FOTOS_CABANA[0],
-    FOTOS_CABANA[2],
-    FOTOS_CABANA[6],
-    FOTOS_EXTERIOR[3],
-    FOTOS_CABANA[9],
-    FOTOS_CABANA[5],
-    FOTOS_EXTERIOR[1],
-    FOTOS_CABANA[1],
-  ];
+    'pileta',
+    'salon-comedor-camas',
+    'cocina-equipada',
+    'habitacion-cama-doble',
+    'patio-parque',
+    'camas-nido',
+    'patio-noche-luces',
+    'bano-ducha',
+    'jardin-mesas',
+  ].map((id) => [...FOTOS_EXTERIOR, ...FOTOS_CABANA].find((foto) => foto.id === id)!);
 
   protected readonly comodidades: { icono: NombreIcono; titulo: string; texto: string }[] = [
     { icono: 'pileta', titulo: 'Pileta', texto: 'En temporada, de noviembre a marzo' },
@@ -200,8 +201,8 @@ export class Inicio {
     {
       ruta: '/estadias',
       fragmento: 'fotos',
-      foto: 'cabana-habitacion-cama-doble',
-      alt: 'Habitación de la cabaña con cama de dos plazas',
+      foto: 'comedor-mesa',
+      alt: 'Comedor de la cabaña con mesa y camas',
       etiqueta: 'Adentro',
       titulo: 'Cabaña para 7 personas',
       texto: 'Habitación en planta alta, comedor con camas nido, cocina completa y dos baños.',
@@ -210,7 +211,7 @@ export class Inicio {
     {
       ruta: '/estadias',
       fragmento: 'exterior',
-      foto: 'exterior-jardin-parque',
+      foto: 'patio-parque',
       alt: 'Jardín privado de la cabaña',
       etiqueta: 'Afuera',
       titulo: 'Jardín, pileta y parrilla',

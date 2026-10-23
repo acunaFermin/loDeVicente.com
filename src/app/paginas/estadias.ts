@@ -25,7 +25,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
         <app-botones-contacto class="mt-8" [mensaje]="mensaje" textoWhatsapp="Consultar fechas" />
       </div>
       <div class="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-arena lg:aspect-[5/6]">
-        <img ngSrc="cabana-salon-comedor-camas" alt="Salón comedor de la cabaña con camas nido" fill priority sizes="(min-width: 1024px) 50vw, 100vw" class="object-cover" />
+        <img ngSrc="salon-comedor-camas" alt="Salón comedor de la cabaña con camas y mesa" fill priority sizes="(min-width: 1024px) 50vw, 100vw" class="object-cover" />
       </div>
     </section>
 
