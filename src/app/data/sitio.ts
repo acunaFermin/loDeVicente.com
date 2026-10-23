@@ -23,7 +23,7 @@ export const SITIO = {
 
 export const MENSAJES = {
   general: '¡Hola! Quisiera consultar por precios y disponibilidad. ¡Muchas gracias!',
-  estadia: '¡Hola! Quisiera consultar disponibilidad y precio de la cabaña para estas fechas: ',
+  estadia: '¡Hola! Quisiera consultar disponibilidad y precio del alojamiento para estas fechas: ',
 } as const;
 
 export function linkWhatsapp(mensaje: string = MENSAJES.general): string {

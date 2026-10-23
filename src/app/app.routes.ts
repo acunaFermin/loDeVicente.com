@@ -7,19 +7,19 @@ export const routes: Routes = [
   {
     path: '',
     component: Inicio,
-    title: 'Lo de Vicente | Cabaña con pileta y parrilla en Tandil',
+    title: 'Lo de Vicente | Alojamiento independiente con pileta en Tandil',
     data: {
       descripcion:
-        'Cabaña para hasta 7 personas con pileta, parrilla, fogón y jardín privado en Tandil, a 10 minutos del centro y a 2 km del Cerro La Movediza. Consultá disponibilidad por WhatsApp.',
+        'Alojamiento independiente para hasta 7 personas en Tandil, con pileta, parrilla, fogón y jardín de uso exclusivo. A 10 minutos del centro y a 2 km del Cerro La Movediza. Consultá por WhatsApp.',
     },
   },
   {
     path: 'estadias',
     component: Estadias,
-    title: 'Alojamiento en Tandil para 7 personas con pileta | Lo de Vicente',
+    title: 'Alojamiento independiente para 7 personas con pileta en Tandil | Lo de Vicente',
     data: {
       descripcion:
-        'Cabaña en Tandil para hasta 7 personas: habitación en planta alta, cocina equipada, 2 baños, wifi, smart TV, aire acondicionado, pileta, parrilla y jardín privado.',
+        'Alojamiento independiente en Tandil para hasta 7 personas: habitación en planta alta, cocina equipada, 2 baños, wifi, smart TV, aire acondicionado y pileta, parrilla y jardín de uso exclusivo.',
     },
   },
   {

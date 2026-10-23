@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FOTOS_CABANA, FOTOS_EXTERIOR } from '../data/galerias';
+import { FOTOS_EXTERIOR, FOTOS_INTERIOR } from '../data/galerias';
 import { MENSAJES } from '../data/sitio';
 import { Galeria } from '../shared/galeria';
 import { Icono, NombreIcono } from '../shared/icono';
@@ -15,17 +15,17 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
       <div>
         <p class="etiqueta"><app-icono nombre="casa" class="size-4" /> Alojamiento en Tandil</p>
         <h1 class="mt-5 font-display text-4xl leading-[1.08] tracking-tight text-balance text-bosque sm:text-6xl">
-          Cabaña con pileta para hasta 7 personas
+          Alojamiento independiente para hasta 7 personas
         </h1>
         <p class="mt-6 text-lg leading-relaxed text-pretty text-tinta/75">
-          ¿Buscás hospedarte en Tandil? Te ofrecemos una cabaña cálida y confortable para turistas y lugareños que
-          quieran descansar y disfrutar de las bellezas de nuestra ciudad. Estamos a 2 km del Cerro La Movediza y a 10
-          minutos del centro comercial, con privacidad y todo lo necesario para que tu estadía sea inolvidable.
+          ¿Buscás hospedarte en Tandil? Te ofrecemos una vivienda independiente, cálida y confortable, ubicada en el
+          fondo de un predio totalmente perimetrado. El jardín, la pileta, la parrilla y el fogón son de uso exclusivo
+          para vos y tu grupo. Estamos a 2 km del Cerro La Movediza y a 10 minutos del centro comercial.
         </p>
         <app-botones-contacto class="mt-8" [mensaje]="mensaje" textoWhatsapp="Consultar fechas" />
       </div>
       <div class="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-arena lg:aspect-[5/6]">
-        <img ngSrc="salon-comedor-camas" alt="Salón comedor de la cabaña con camas y mesa" fill priority sizes="(min-width: 1024px) 50vw, 100vw" class="object-cover" />
+        <img ngSrc="salon-comedor-camas" alt="Salón comedor del alojamiento con camas y mesa" fill priority sizes="(min-width: 1024px) 50vw, 100vw" class="object-cover" />
       </div>
     </section>
 
@@ -33,7 +33,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
       <div class="contenedor grid gap-12 py-16 sm:py-20 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
         <div>
           <p class="etiqueta">Distribución</p>
-          <h2 class="titulo-seccion">Así es la cabaña</h2>
+          <h2 class="titulo-seccion">Así es el alojamiento</h2>
           <p class="mt-5 leading-relaxed text-tinta/75">
             Dos plantas pensadas para familias y grupos de amigos. Se provee blanquería, abrigo y almohadas.
           </p>
@@ -67,12 +67,12 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
 
     <section id="fotos" class="contenedor scroll-mt-24 pb-8">
       <p class="etiqueta">Fotos</p>
-      <h2 class="titulo-seccion">Adentro de la cabaña</h2>
-      <app-galeria class="mt-8 block" [fotos]="fotosCabana" />
+      <h2 class="titulo-seccion">Adentro</h2>
+      <app-galeria class="mt-8 block" [fotos]="fotosInterior" />
     </section>
 
     <section id="exterior" class="contenedor scroll-mt-24 pt-12 pb-4">
-      <h2 class="titulo-seccion">Jardín, pileta y parrilla</h2>
+      <h2 class="titulo-seccion">Jardín, pileta y fogón</h2>
       <app-galeria class="mt-8 block" [fotos]="fotosExterior" />
     </section>
 
@@ -85,7 +85,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
 })
 export class Estadias {
   protected readonly mensaje = MENSAJES.estadia;
-  protected readonly fotosCabana = FOTOS_CABANA;
+  protected readonly fotosInterior = FOTOS_INTERIOR;
   protected readonly fotosExterior = FOTOS_EXTERIOR;
 
   protected readonly ambientes: { icono: NombreIcono; titulo: string; texto: string }[] = [
@@ -113,14 +113,15 @@ export class Estadias {
 
   protected readonly servicios: { icono: NombreIcono; texto: string }[] = [
     { icono: 'wifi', texto: 'Wifi gratuito' },
-    { icono: 'pileta', texto: 'Pileta (noviembre a marzo)' },
-    { icono: 'fuego', texto: 'Parrilla adentro y afuera' },
-    { icono: 'fuego', texto: 'Fogón y disco' },
-    { icono: 'arbol', texto: 'Espacio verde privado' },
-    { icono: 'sol', texto: 'Reposeras y sombrilla' },
+    { icono: 'casa', texto: 'Vivienda independiente' },
+    { icono: 'arbol', texto: 'Predio totalmente perimetrado' },
+    { icono: 'pileta', texto: 'Pileta exclusiva (nov. a marzo, 11 a 20 h)' },
+    { icono: 'fuego', texto: 'Parrilla y fogón al aire libre' },
+    { icono: 'arbol', texto: 'Jardín de uso exclusivo' },
+    { icono: 'sol', texto: 'Mesas, sillones y sombrilla' },
     { icono: 'tv', texto: 'Smart TV con streaming' },
     { icono: 'aire', texto: 'A/C frío/calor' },
-    { icono: 'auto', texto: 'Entrada para auto compartida' },
+    { icono: 'auto', texto: 'Cochera compartida (moto o un vehículo)' },
     { icono: 'cama', texto: 'Blanquería incluida' },
     { icono: 'calendario', texto: 'Abierto todo el año' },
   ];

@@ -10,6 +10,7 @@ export const FOTOS = {
   'patio-noche-luces': { w: 963, h: 1101 },
   'cartel-lo-de-vicente': { w: 1280, h: 960 },
   'garage': { w: 963, h: 1101 },
+  'fogon-asado': { w: 379, h: 478 },
   'salon-comedor-camas': { w: 1224, h: 918 },
   'comedor-mesa': { w: 960, h: 1101 },
   'comedor-mesa-larga': { w: 1224, h: 1001 },

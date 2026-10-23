@@ -1,7 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FOTOS_CABANA, FOTOS_EXTERIOR } from '../data/galerias';
+import { FOTOS_EXTERIOR, FOTOS_INTERIOR } from '../data/galerias';
 import { SITIO } from '../data/sitio';
 import { Galeria } from '../shared/galeria';
 import { Icono, NombreIcono } from '../shared/icono';
@@ -20,18 +20,19 @@ import { Mapa } from '../shared/mapa';
           <app-icono nombre="ubicacion" class="size-4" /> Villa Italia · Tandil
         </p>
         <h1 class="mt-5 font-display text-[2.6rem] leading-[1.05] tracking-tight text-balance text-bosque sm:text-6xl xl:text-7xl">
-          Tu cabaña con pileta y parrilla en <em class="text-terracota">Tandil</em>
+          Alojamiento independiente con pileta en <em class="text-terracota">Tandil</em>
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-tinta/75">
-          Cabaña para <strong class="text-tinta">hasta 7 personas</strong> a solo 10 minutos del centro, con jardín
-          privado, pileta, parrilla y fogón. A 2 km del Cerro La Movediza y abierta todo el año.
+          Vivienda independiente para <strong class="text-tinta">hasta 7 personas</strong>, en el fondo de un predio
+          totalmente perimetrado. Jardín, pileta, parrilla y fogón de uso exclusivo para vos y tu grupo. A 10 minutos del
+          centro y a 2 km del Cerro La Movediza.
         </p>
         <app-botones-contacto class="mt-8" />
 
         <dl class="mt-10 grid max-w-lg grid-cols-3 gap-4 border-t border-tinta/10 pt-6">
           <div>
             <dt class="text-xs tracking-wide text-tinta/60 uppercase">Huéspedes</dt>
-            <dd class="mt-1 font-display text-3xl text-bosque">7<span class="block font-sans text-xs text-tinta/60">en la cabaña</span></dd>
+            <dd class="mt-1 font-display text-3xl text-bosque">7<span class="block font-sans text-xs text-tinta/60">personas</span></dd>
           </div>
           <div>
             <dt class="text-xs tracking-wide text-tinta/60 uppercase">Baños</dt>
@@ -46,13 +47,13 @@ import { Mapa } from '../shared/mapa';
 
       <div class="grid h-[26rem] grid-cols-5 grid-rows-2 gap-3 sm:h-[34rem] sm:gap-4">
         <div class="relative col-span-3 row-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
-          <img ngSrc="pileta" alt="Pileta de la cabaña Lo de Vicente en Tandil" fill priority sizes="(min-width: 1024px) 30vw, 60vw" class="object-cover" />
+          <img ngSrc="pileta" alt="Pileta de uso exclusivo en Lo de Vicente, Tandil" fill priority sizes="(min-width: 1024px) 30vw, 60vw" class="object-cover" />
         </div>
         <div class="relative col-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
           <img ngSrc="jardin-mesas" alt="Jardín con mesas y bancos" fill priority sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
         </div>
         <div class="relative col-span-2 overflow-hidden rounded-[1.75rem] bg-arena">
-          <img ngSrc="salon-comedor-camas" alt="Salón comedor de la cabaña" fill sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
+          <img ngSrc="salon-comedor-camas" alt="Salón comedor del alojamiento" fill sizes="(min-width: 1024px) 20vw, 40vw" class="object-cover" />
         </div>
       </div>
     </section>
@@ -108,7 +109,7 @@ import { Mapa } from '../shared/mapa';
       <div class="flex flex-wrap items-end justify-between gap-4">
         <div class="max-w-2xl">
           <p class="etiqueta">Galería</p>
-          <h2 class="titulo-seccion">Conocé la cabaña por dentro</h2>
+          <h2 class="titulo-seccion">Conocé el alojamiento</h2>
         </div>
         <a routerLink="/estadias" fragment="fotos" class="inline-flex items-center gap-2 font-semibold text-bosque hover:text-terracota">
           Ver todas las fotos <app-icono nombre="flecha" class="size-5" />
@@ -125,7 +126,7 @@ import { Mapa } from '../shared/mapa';
           <h2 class="titulo-seccion">Tranquilidad, cerca de todo</h2>
           <p class="mt-5 text-lg leading-relaxed text-tinta/75">
             Estamos en el barrio Villa Italia, a <strong class="text-tinta">2 km del Cerro La Movediza</strong> y a 10
-            minutos del centro comercial. Ideal para recorrer Tandil y volver a descansar con privacidad.
+            minutos del centro comercial. Ideal para recorrer Tandil y volver a descansar con total privacidad.
           </p>
           <ul class="mt-6 space-y-3 text-tinta/80">
             <li class="flex items-start gap-3">
@@ -183,18 +184,19 @@ export class Inicio {
     'camas-nido',
     'patio-noche-luces',
     'bano-ducha',
-    'jardin-mesas',
-  ].map((id) => [...FOTOS_EXTERIOR, ...FOTOS_CABANA].find((foto) => foto.id === id)!);
+    'fogon-asado',
+  ].map((id) => [...FOTOS_EXTERIOR, ...FOTOS_INTERIOR].find((foto) => foto.id === id)!);
 
   protected readonly comodidades: { icono: NombreIcono; titulo: string; texto: string }[] = [
-    { icono: 'pileta', titulo: 'Pileta', texto: 'En temporada, de noviembre a marzo' },
-    { icono: 'fuego', titulo: 'Parrilla y fogón', texto: 'Parrilla adentro y afuera, fogón y disco' },
-    { icono: 'arbol', titulo: 'Jardín privado', texto: 'Espacio verde con reposeras y sombrilla' },
-    { icono: 'wifi', titulo: 'Wifi gratis', texto: 'Conexión en toda la cabaña' },
+    { icono: 'casa', titulo: 'Independiente', texto: 'Todo de uso exclusivo, en predio perimetrado' },
+    { icono: 'pileta', titulo: 'Pileta exclusiva', texto: 'De noviembre a marzo, de 11 a 20 h' },
+    { icono: 'fuego', titulo: 'Parrilla y fogón', texto: 'Al aire libre, para asados en el jardín' },
+    { icono: 'arbol', titulo: 'Jardín privado', texto: 'Espacio verde con mesas, sillones y sombrilla' },
+    { icono: 'wifi', titulo: 'Wifi gratis', texto: 'Conexión en todo el alojamiento' },
     { icono: 'tv', titulo: 'Smart TV', texto: 'Con plataformas de streaming' },
     { icono: 'aire', titulo: 'Aire frío / calor', texto: 'Además de calefactor y ventilador' },
     { icono: 'cocina', titulo: 'Cocina equipada', texto: 'Microondas, horno, pava y vajilla' },
-    { icono: 'auto', titulo: 'Entrada para auto', texto: 'De uso compartido' },
+    { icono: 'auto', titulo: 'Cochera', texto: 'Compartida, para una moto o un vehículo' },
   ];
 
   protected readonly tarjetas = [
@@ -202,20 +204,20 @@ export class Inicio {
       ruta: '/estadias',
       fragmento: 'fotos',
       foto: 'comedor-mesa',
-      alt: 'Comedor de la cabaña con mesa y camas',
+      alt: 'Comedor del alojamiento con mesa y camas',
       etiqueta: 'Adentro',
-      titulo: 'Cabaña para 7 personas',
+      titulo: 'Para 7 personas',
       texto: 'Habitación en planta alta, comedor con camas nido, cocina completa y dos baños.',
-      accion: 'Ver la cabaña',
+      accion: 'Ver el alojamiento',
     },
     {
       ruta: '/estadias',
       fragmento: 'exterior',
       foto: 'patio-parque',
-      alt: 'Jardín privado de la cabaña',
+      alt: 'Jardín de uso exclusivo del alojamiento',
       etiqueta: 'Afuera',
-      titulo: 'Jardín, pileta y parrilla',
-      texto: 'Espacio verde privado con pileta en temporada, parrilla, fogón, reposeras y sombrilla.',
+      titulo: 'Jardín, pileta y fogón',
+      texto: 'Todo de uso exclusivo: pileta en temporada, parrilla, fogón, mesas y sillones al aire libre.',
       accion: 'Ver el jardín',
     },
   ];

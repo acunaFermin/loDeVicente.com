@@ -1,6 +1,6 @@
 # Lo de Vicente — lodevicente.com
 
-Sitio de la cabaña en alquiler en Tandil. Angular 22 con **prerenderizado estático** (SSG): cada página se genera como HTML completo al compilar, así Google indexa todo el contenido sin ejecutar JavaScript.
+Sitio de Lo de Vicente, alojamiento independiente en alquiler temporario en Tandil. Angular 22 con **prerenderizado estático** (SSG): cada página se genera como HTML completo al compilar, así Google indexa todo el contenido sin ejecutar JavaScript.
 
 ## Desarrollo
 
