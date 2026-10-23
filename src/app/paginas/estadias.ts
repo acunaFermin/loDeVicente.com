@@ -71,7 +71,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
       <app-galeria class="mt-8 block" [fotos]="fotosCabana" />
     </section>
 
-    <section class="contenedor pt-12 pb-4">
+    <section id="exterior" class="contenedor scroll-mt-24 pt-12 pb-4">
       <h2 class="titulo-seccion">Jardín, pileta y parrilla</h2>
       <app-galeria class="mt-8 block" [fotos]="fotosExterior" />
     </section>

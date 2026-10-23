@@ -24,7 +24,7 @@ import { Mapa } from '../shared/mapa';
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-tinta/75">
           Cabaña para <strong class="text-tinta">hasta 7 personas</strong> a solo 10 minutos del centro, con jardín
-          privado, pileta, parrilla y fogón. También alquilamos nuestro quincho para eventos de hasta 30 personas.
+          privado, pileta, parrilla y fogón. A 2 km del Cerro La Movediza y abierta todo el año.
         </p>
         <app-botones-contacto class="mt-8" />
 
@@ -38,8 +38,8 @@ import { Mapa } from '../shared/mapa';
             <dd class="mt-1 font-display text-3xl text-bosque">2<span class="block font-sans text-xs text-tinta/60">+ antebaño</span></dd>
           </div>
           <div>
-            <dt class="text-xs tracking-wide text-tinta/60 uppercase">Eventos</dt>
-            <dd class="mt-1 font-display text-3xl text-bosque">30<span class="block font-sans text-xs text-tinta/60">personas</span></dd>
+            <dt class="text-xs tracking-wide text-tinta/60 uppercase">Del centro</dt>
+            <dd class="mt-1 font-display text-3xl text-bosque">10<span class="block font-sans text-xs text-tinta/60">minutos</span></dd>
           </div>
         </dl>
       </div>
@@ -80,15 +80,15 @@ import { Mapa } from '../shared/mapa';
       </div>
     </section>
 
-    <!-- Alojamiento y eventos -->
+    <!-- Adentro y afuera -->
     <section class="contenedor py-16 sm:py-24">
       <div class="max-w-2xl">
         <p class="etiqueta">Lo de Vicente</p>
-        <h2 class="titulo-seccion">Un lugar para quedarte, otro para celebrar</h2>
+        <h2 class="titulo-seccion">Comodidad adentro, naturaleza afuera</h2>
       </div>
       <div class="mt-10 grid gap-6 md:grid-cols-2">
-        @for (tarjeta of tarjetas; track tarjeta.ruta) {
-          <a [routerLink]="tarjeta.ruta" class="group relative isolate flex min-h-[28rem] flex-col justify-end overflow-hidden rounded-[2rem] p-7 text-white sm:p-9">
+        @for (tarjeta of tarjetas; track tarjeta.titulo) {
+          <a [routerLink]="tarjeta.ruta" [fragment]="tarjeta.fragmento" class="group relative isolate flex min-h-[28rem] flex-col justify-end overflow-hidden rounded-[2rem] p-7 text-white sm:p-9">
             <img [ngSrc]="tarjeta.foto" [alt]="tarjeta.alt" fill sizes="(min-width: 768px) 50vw, 100vw" class="-z-10 object-cover transition duration-700 group-hover:scale-105" />
             <div aria-hidden="true" class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 via-black/30 to-transparent"></div>
             <p class="text-xs font-semibold tracking-[0.2em] text-white/80 uppercase">{{ tarjeta.etiqueta }}</p>
@@ -199,21 +199,23 @@ export class Inicio {
   protected readonly tarjetas = [
     {
       ruta: '/estadias',
+      fragmento: 'fotos',
       foto: 'cabana-habitacion-cama-doble',
       alt: 'Habitación de la cabaña con cama de dos plazas',
-      etiqueta: 'Alojamiento',
+      etiqueta: 'Adentro',
       titulo: 'Cabaña para 7 personas',
       texto: 'Habitación en planta alta, comedor con camas nido, cocina completa y dos baños.',
       accion: 'Ver la cabaña',
     },
     {
-      ruta: '/eventos',
-      foto: 'quincho-salon-eventos',
-      alt: 'Salón del quincho preparado para un evento',
-      etiqueta: 'Eventos',
-      titulo: 'Quincho para 30 personas',
-      texto: 'Cumpleaños, bautismos, comuniones y reuniones con pileta, parrilla y jardín.',
-      accion: 'Ver el quincho',
+      ruta: '/estadias',
+      fragmento: 'exterior',
+      foto: 'exterior-jardin-parque',
+      alt: 'Jardín privado de la cabaña',
+      etiqueta: 'Afuera',
+      titulo: 'Jardín, pileta y parrilla',
+      texto: 'Espacio verde privado con pileta en temporada, parrilla, fogón, reposeras y sombrilla.',
+      accion: 'Ver el jardín',
     },
   ];
 }

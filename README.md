@@ -1,6 +1,6 @@
 # Lo de Vicente — lodevicente.com
 
-Sitio de la cabaña y quincho para eventos en Tandil. Angular 22 con **prerenderizado estático** (SSG): cada página se genera como HTML completo al compilar, así Google indexa todo el contenido sin ejecutar JavaScript.
+Sitio de la cabaña en alquiler en Tandil. Angular 22 con **prerenderizado estático** (SSG): cada página se genera como HTML completo al compilar, así Google indexa todo el contenido sin ejecutar JavaScript.
 
 ## Desarrollo
 
@@ -14,7 +14,7 @@ npm run build    # genera dist/vicente/browser
 
 ## Estructura
 
-- `src/app/paginas/` — Inicio, Alojamiento (`/estadias`), Eventos y Contacto.
+- `src/app/paginas/` — Inicio, Alojamiento (`/estadias`) y Contacto.
 - `src/app/data/sitio.ts` — teléfono, WhatsApp, email, redes, dirección y mapa. **Para cambiar un dato de contacto, editarlo acá.**
 - `src/app/data/galerias.ts` — qué fotos aparecen en cada galería, con su texto alternativo y descripción.
 - `src/app/data/fotos.ts` — dimensiones de cada foto (generado).

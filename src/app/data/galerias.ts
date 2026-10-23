@@ -61,26 +61,5 @@ export const FOTOS_EXTERIOR: Foto[] = [
   { id: 'exterior-sillones-jardin', alt: 'Sillones y reposeras en el parque', desc: 'Rincones para descansar al aire libre.' },
   { id: 'exterior-sombrilla-jardin', alt: 'Mesa con sombrilla en el jardín', desc: 'Mesa con sombrilla.' },
   { id: 'exterior-metegol', alt: 'Metegol en el jardín', desc: 'Metegol para los más chicos (y los grandes).' },
-  { id: 'quincho-fogon', alt: 'Fogón de ladrillo en el parque', desc: 'Fogón y disco para las noches.' },
-];
-
-export const FOTOS_EVENTOS: Foto[] = [
-  { id: 'quincho-salon-eventos', alt: 'Salón del quincho Lo de Vicente', desc: 'Quincho con capacidad para 30 personas.' },
-  { id: 'evento-quincho-con-invitados', alt: 'Reunión familiar en el quincho', desc: 'Reuniones con familia y amigos.' },
-  { id: 'evento-mesa-dulce', alt: 'Mesa dulce de cumpleaños infantil', desc: 'Cumpleaños infantiles.' },
-  { id: 'evento-bautismo-torta', alt: 'Torta de bautismo y primer añito', desc: 'Bautismos y primer añito.' },
-  { id: 'quincho-mesas-sillas', alt: 'Mesas y sillas del quincho', desc: 'Vajilla y mantelería completa.' },
-  { id: 'evento-cumpleanos-infantil', alt: 'Festejo de cumpleaños infantil en el quincho' },
-  { id: 'evento-pileta-chicos', alt: 'Chicos jugando en la pileta durante un evento', desc: 'Pileta en temporada.' },
-  { id: 'quincho-mesa-larga', alt: 'Mesa larga del quincho con sillas de madera' },
-  { id: 'evento-animacion-infantil', alt: 'Animación infantil en un cumpleaños' },
-  { id: 'evento-cumpleanos-decoracion', alt: 'Decoración de cumpleaños en el quincho' },
-  { id: 'quincho-salon-cerrado', alt: 'Salón cerrado del quincho' },
-  { id: 'evento-cumpleanos-velas', alt: 'Soplando las velas de cumpleaños' },
-  { id: 'evento-pileta-verano', alt: 'Familia disfrutando la pileta en verano' },
-  { id: 'quincho-iluminado', alt: 'Quincho iluminado de noche' },
-  { id: 'evento-fogon-noche', alt: 'Fogón encendido de noche en el parque' },
-  { id: 'quincho-ventilador', alt: 'Quincho con ventilador y ventanales' },
-  { id: 'quincho-freezer', alt: 'Freezer disponible en el quincho' },
-  { id: 'evento-bautismo', alt: 'Celebración de bautismo' },
+  { id: 'exterior-fogon', alt: 'Fogón de ladrillo en el parque', desc: 'Fogón y disco para las noches.' },
 ];

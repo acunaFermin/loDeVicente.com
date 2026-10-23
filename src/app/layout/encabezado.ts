@@ -77,7 +77,6 @@ export class Encabezado {
   protected readonly links = [
     { ruta: '/', texto: 'Inicio' },
     { ruta: '/estadias', texto: 'Alojamiento' },
-    { ruta: '/eventos', texto: 'Eventos' },
     { ruta: '/contacto', texto: 'Contacto' },
   ];
 }

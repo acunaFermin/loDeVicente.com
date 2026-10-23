@@ -11,7 +11,7 @@ import { Icono, IconoWhatsapp } from '../shared/icono';
   template: `
     <div class="contenedor grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
       <div>
-        <img src="/img/lo-de-vicente-logo-linea.webp" alt="Lo de Vicente - Eventos y estadías en Tandil" width="640" height="328" class="h-auto w-44" loading="lazy" />
+        <img src="/img/lo-de-vicente-logo-linea.webp" alt="Lo de Vicente - Estadías en Tandil" width="640" height="328" class="h-auto w-44" loading="lazy" />
         <p class="mt-5 max-w-xs text-sm leading-relaxed">
           Somos una familia emprendedora que busca ofrecerte un espacio cálido y confortable para que tu estadía en
           Tandil sea inolvidable.
@@ -23,7 +23,6 @@ import { Icono, IconoWhatsapp } from '../shared/icono';
         <ul class="space-y-2.5 text-sm">
           <li><a routerLink="/" class="link-pie">Inicio</a></li>
           <li><a routerLink="/estadias" class="link-pie">Alojamiento en Tandil</a></li>
-          <li><a routerLink="/eventos" class="link-pie">Quincho para eventos</a></li>
           <li><a routerLink="/contacto" class="link-pie">Contacto y ubicación</a></li>
         </ul>
       </div>
@@ -74,7 +73,7 @@ import { Icono, IconoWhatsapp } from '../shared/icono';
     </div>
     <div class="border-t border-crema/10">
       <p class="contenedor py-6 text-xs text-crema/50">
-        © {{ anio }} Lo de Vicente · Alojamiento y eventos en Tandil, Buenos Aires.
+        © {{ anio }} Lo de Vicente · Alojamiento en Tandil, Buenos Aires.
       </p>
     </div>
   `,

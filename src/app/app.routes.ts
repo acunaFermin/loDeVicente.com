@@ -1,17 +1,16 @@
 import { Routes } from '@angular/router';
 import { Contacto } from './paginas/contacto';
 import { Estadias } from './paginas/estadias';
-import { Eventos } from './paginas/eventos';
 import { Inicio } from './paginas/inicio';
 
 export const routes: Routes = [
   {
     path: '',
     component: Inicio,
-    title: 'Lo de Vicente | Cabaña con pileta y quincho para eventos en Tandil',
+    title: 'Lo de Vicente | Cabaña con pileta y parrilla en Tandil',
     data: {
       descripcion:
-        'Cabaña para hasta 7 personas con pileta, parrilla y fogón en Tandil, a 10 minutos del centro. Quincho para eventos de hasta 30 personas. Consultá disponibilidad por WhatsApp.',
+        'Cabaña para hasta 7 personas con pileta, parrilla, fogón y jardín privado en Tandil, a 10 minutos del centro y a 2 km del Cerro La Movediza. Consultá disponibilidad por WhatsApp.',
     },
   },
   {
@@ -21,15 +20,6 @@ export const routes: Routes = [
     data: {
       descripcion:
         'Cabaña en Tandil para hasta 7 personas: habitación en planta alta, cocina equipada, 2 baños, wifi, smart TV, aire acondicionado, pileta, parrilla y jardín privado.',
-    },
-  },
-  {
-    path: 'eventos',
-    component: Eventos,
-    title: 'Quincho para eventos en Tandil hasta 30 personas | Lo de Vicente',
-    data: {
-      descripcion:
-        'Alquiler de quincho en Tandil para cumpleaños, bautismos, comuniones y reuniones de hasta 30 personas. Pileta, parrilla techada, fogón, vajilla y espacio verde.',
     },
   },
   {
