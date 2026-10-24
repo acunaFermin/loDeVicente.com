@@ -36,7 +36,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
           <p class="etiqueta">Distribución</p>
           <h2 class="titulo-seccion">Así es el alojamiento</h2>
           <p class="mt-5 leading-relaxed text-tinta/75">
-            Dos plantas pensadas para familias y grupos de amigos. Se provee blanquería, abrigo y almohadas.
+            Dos plantas pensadas para familias y grupos de amigos. Se provee ropa de cama, abrigo y almohadas.
           </p>
         </div>
         <dl class="grid gap-6 sm:grid-cols-2">

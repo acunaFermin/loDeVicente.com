@@ -30,7 +30,7 @@ export const FOTOS_INTERIOR: Foto[] = [
   {
     id: 'camas-nido',
     alt: 'Camas nido en el salón comedor',
-    desc: 'Camas nido muy cómodas y fáciles de armar. Incluye blanquería, abrigo y almohadas.',
+    desc: 'Camas nido muy cómodas y fáciles de armar. Incluye ropa de cama, abrigo y almohadas.',
   },
   { id: 'living-smart-tv', alt: 'Living con smart TV y sillón', desc: 'Living con smart TV y sillón.' },
   { id: 'comedor-mesa-larga', alt: 'Mesa larga del comedor con vista a la cocina' },
