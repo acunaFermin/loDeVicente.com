@@ -59,5 +59,5 @@ export const FOTOS_EXTERIOR: Foto[] = [
   { id: 'jardin-limonero-mesas', alt: 'Mesas bajo el limonero', desc: 'Sombra natural bajo el limonero.' },
   { id: 'jardin-noche', alt: 'Jardín con guirnalda de luces de noche', desc: 'Noches de verano en el jardín.' },
   { id: 'cartel-lo-de-vicente', alt: 'Cartel de madera de Lo de Vicente en el jardín' },
-  { id: 'garage', alt: 'Cochera techada', desc: 'Cochera compartida, para guardar una moto o un vehículo.' },
+  { id: 'garage', alt: 'Cochera techada', desc: 'Cochera compartida, para guardar motos o un vehículo.' },
 ];

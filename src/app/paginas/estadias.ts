@@ -18,7 +18,7 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
           Alojamiento independiente para hasta 6 huéspedes
         </h1>
         <p class="mt-6 text-lg leading-relaxed text-pretty text-tinta/75">
-          ¿Buscás hospedarte en Tandil? Te ofrecemos una vivienda equipada, cálida y confortable, ubicada al fondo de un
+          ¿Buscás hospedarte en Tandil? Te ofrecemos una vivienda equipada, cálida y confortable, ubicada en un
           predio independiente y totalmente perimetrado. El jardín, la pileta, la parrilla y el fogón son de uso exclusivo
           para vos y tu grupo. Estamos en una zona muy tranquila y segura, a 10 minutos del centro y a 2 km del Cerro La
           Movediza.
