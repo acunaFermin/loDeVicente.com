@@ -3,7 +3,7 @@ export const SITIO = {
   url: 'https://lodevicente.com',
   telefono: '+542494632892',
   telefonoVisible: '249 463-2892',
-  email: 'tandil.lodevicente@gmail.com',
+  email: 'contacto@lodevicente.com',
   whatsappNumero: '542494632892',
   instagram: 'https://www.instagram.com/tandil.lodevicente',
   instagramUsuario: '@tandil.lodevicente',
