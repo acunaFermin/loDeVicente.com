@@ -103,7 +103,7 @@ export class Estadias {
     {
       icono: 'cocina',
       titulo: 'Cocina equipada',
-      texto: 'Cocina y horno a gas, microondas, pava eléctrica, tostadora, freezer, desayunador y vajilla completa.',
+      texto: 'Anafe de 4 hornallas, microondas, pava eléctrica, tostadora, freezer, desayunador y vajilla completa.',
     },
     {
       icono: 'bano',
@@ -123,7 +123,7 @@ export class Estadias {
     { icono: 'tv', texto: 'Smart TV con streaming' },
     { icono: 'aire', texto: 'A/C frío/calor' },
     { icono: 'auto', texto: 'Cochera compartida (moto o un vehículo)' },
-    { icono: 'cama', texto: 'Blanquería incluida' },
+    { icono: 'cama', texto: 'Ropa de cama' },
     { icono: 'calendario', texto: 'Abierto todo el año' },
   ];
 }

@@ -16,8 +16,8 @@ export const FOTOS_INTERIOR: Foto[] = [
   { id: 'cocina-equipada', alt: 'Cocina equipada con heladera y desayunador', desc: 'Cocina totalmente equipada con heladera y desayunador.' },
   {
     id: 'cocina-anafe-horno',
-    alt: 'Cocina con anafe, horno y pava eléctrica',
-    desc: 'Cocina y horno a gas, pava eléctrica y todos los elementos de cocina.',
+    alt: 'Cocina con anafe y pava eléctrica',
+    desc: 'Anafe de 4 hornallas, pava eléctrica y todos los elementos de cocina.',
   },
   { id: 'cocina-desayunador', alt: 'Barra desayunador con banquetas', desc: 'Barra desayunador con banquetas.' },
   {
