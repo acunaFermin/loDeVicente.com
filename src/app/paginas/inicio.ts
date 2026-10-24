@@ -20,19 +20,19 @@ import { Mapa } from '../shared/mapa';
           <app-icono nombre="ubicacion" class="size-4" /> Villa Italia · Tandil
         </p>
         <h1 class="mt-5 font-display text-[2.6rem] leading-[1.05] tracking-tight text-balance text-bosque sm:text-6xl xl:text-7xl">
-          Alojamiento independiente con pileta en <em class="text-terracota">Tandil</em>
+          Alojamiento temporario con pileta y fogón en <em class="text-terracota">Tandil</em>
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-tinta/75">
-          Vivienda independiente para <strong class="text-tinta">hasta 7 personas</strong>, en el fondo de un predio
-          totalmente perimetrado. Jardín, pileta, parrilla y fogón de uso exclusivo para vos y tu grupo. A 10 minutos del
-          centro y a 2 km del Cerro La Movediza.
+          Vivienda equipada para <strong class="text-tinta">hasta 6 huéspedes</strong>, ubicada en un predio
+          independiente y totalmente perimetrado. Jardín, pileta, parrilla y fogón de uso exclusivo para vos y tu grupo,
+          a 10 minutos del centro y a 2 km del Cerro La Movediza.
         </p>
         <app-botones-contacto class="mt-8" />
 
         <dl class="mt-10 grid max-w-lg grid-cols-3 gap-4 border-t border-tinta/10 pt-6">
           <div>
             <dt class="text-xs tracking-wide text-tinta/60 uppercase">Huéspedes</dt>
-            <dd class="mt-1 font-display text-3xl text-bosque">7<span class="block font-sans text-xs text-tinta/60">personas</span></dd>
+            <dd class="mt-1 font-display text-3xl text-bosque">6<span class="block font-sans text-xs text-tinta/60">como máximo</span></dd>
           </div>
           <div>
             <dt class="text-xs tracking-wide text-tinta/60 uppercase">Baños</dt>
@@ -123,23 +123,22 @@ import { Mapa } from '../shared/mapa';
       <div class="contenedor grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-2 lg:gap-16">
         <div>
           <p class="etiqueta">Ubicación</p>
-          <h2 class="titulo-seccion">Tranquilidad, cerca de todo</h2>
+          <h2 class="titulo-seccion">Un barrio tranquilo, con todo cerca</h2>
           <p class="mt-5 text-lg leading-relaxed text-tinta/75">
-            Estamos en el barrio Villa Italia, a <strong class="text-tinta">2 km del Cerro La Movediza</strong> y a 10
-            minutos del centro comercial. Ideal para recorrer Tandil y volver a descansar con total privacidad.
+            Estamos en Villa Italia, una de las zonas más tranquilas y seguras de Tandil. El barrio tiene un centro
+            comercial muy completo, con negocios de todo tipo y propuestas gastronómicas a pocos pasos. Si preferís
+            quedarte a descansar, tenés todo lo necesario sin moverte casi nada.
           </p>
-          <ul class="mt-6 space-y-3 text-tinta/80">
+          <ul class="mt-6 space-y-4 text-tinta/80">
+            @for (item of barrio; track item.texto) {
+              <li class="flex items-start gap-3">
+                <app-icono [nombre]="item.icono" class="mt-0.5 size-5 shrink-0 text-terracota" />
+                <span>{{ item.texto }}</span>
+              </li>
+            }
             <li class="flex items-start gap-3">
-              <app-icono nombre="ubicacion" class="mt-0.5 size-5 text-terracota" />
-              <span>{{ sitio.direccion.calle }}, {{ sitio.direccion.entreCalles.toLowerCase() }}</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <app-icono nombre="arbol" class="mt-0.5 size-5 text-terracota" />
-              <span>Cerca del Cerro La Movediza, el Lago del Fuerte y las sierras</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <app-icono nombre="calendario" class="mt-0.5 size-5 text-terracota" />
-              <span>Te recibimos durante todo el año</span>
+              <app-icono nombre="ubicacion" class="mt-0.5 size-5 shrink-0 text-terracota" />
+              <span>{{ sitio.direccion.calle }}, entre Magallanes y Maritorena</span>
             </li>
           </ul>
           <a [href]="sitio.mapaLink" target="_blank" rel="noopener" class="boton boton-secundario mt-8">
@@ -187,16 +186,33 @@ export class Inicio {
     'fogon-asado',
   ].map((id) => [...FOTOS_EXTERIOR, ...FOTOS_INTERIOR].find((foto) => foto.id === id)!);
 
+  protected readonly barrio: { icono: NombreIcono; texto: string }[] = [
+    {
+      icono: 'arbol',
+      texto:
+        'Una senda peatonal con juegos para chicos te lleva hasta el Cerro La Movediza: una caminata muy agradable de 30 a 40 minutos, entre árboles y césped.',
+    },
+    {
+      icono: 'cocina',
+      texto:
+        'Supermercado Carrefour a 9 cuadras, además de minimercados, autoservicios, verdulerías y carnicerías del barrio.',
+    },
+    {
+      icono: 'auto',
+      texto: 'Pasan dos líneas de colectivo que te llevan a distintos puntos de la ciudad, ideal si venís sin auto.',
+    },
+  ];
+
   protected readonly comodidades: { icono: NombreIcono; titulo: string; texto: string }[] = [
     { icono: 'casa', titulo: 'Independiente', texto: 'Todo de uso exclusivo, en predio perimetrado' },
     { icono: 'pileta', titulo: 'Pileta exclusiva', texto: 'De noviembre a marzo, de 11 a 20 h' },
     { icono: 'fuego', titulo: 'Parrilla y fogón', texto: 'Al aire libre, para asados en el jardín' },
     { icono: 'arbol', titulo: 'Jardín privado', texto: 'Espacio verde con mesas, sillones y sombrilla' },
     { icono: 'wifi', titulo: 'Wifi gratis', texto: 'Conexión en todo el alojamiento' },
-    { icono: 'tv', titulo: 'Smart TV', texto: 'Con plataformas de streaming' },
-    { icono: 'aire', titulo: 'Aire frío / calor', texto: 'Además de calefactor y ventilador' },
-    { icono: 'cocina', titulo: 'Cocina equipada', texto: 'Microondas, horno, pava y vajilla' },
-    { icono: 'auto', titulo: 'Cochera', texto: 'Compartida, para una moto o un vehículo' },
+    { icono: 'tv', titulo: 'Smart TV', texto: 'En habitación y comedor' },
+    { icono: 'aire', titulo: 'Aire frío / calor', texto: 'En habitación. En el comedor ventilador de pie y calefactor' },
+    { icono: 'cocina', titulo: 'Cocina independiente y equipada', texto: 'Heladera, anafe, microondas y vajilla' },
+    { icono: 'auto', titulo: 'Cochera', texto: 'Compartida, para motos o un vehículo' },
   ];
 
   protected readonly tarjetas = [
@@ -206,7 +222,7 @@ export class Inicio {
       foto: 'comedor-mesa',
       alt: 'Comedor del alojamiento con mesa y camas',
       etiqueta: 'Adentro',
-      titulo: 'Para 7 personas',
+      titulo: 'Para 6 huéspedes',
       texto: 'Habitación en planta alta, comedor con camas nido, cocina completa y dos baños.',
       accion: 'Ver el alojamiento',
     },

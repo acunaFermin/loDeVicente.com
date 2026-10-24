@@ -15,12 +15,13 @@ import { BotonesContacto, LlamadoContacto } from '../shared/llamado-contacto';
       <div>
         <p class="etiqueta"><app-icono nombre="casa" class="size-4" /> Alojamiento en Tandil</p>
         <h1 class="mt-5 font-display text-4xl leading-[1.08] tracking-tight text-balance text-bosque sm:text-6xl">
-          Alojamiento independiente para hasta 7 personas
+          Alojamiento independiente para hasta 6 huéspedes
         </h1>
         <p class="mt-6 text-lg leading-relaxed text-pretty text-tinta/75">
-          ¿Buscás hospedarte en Tandil? Te ofrecemos una vivienda independiente, cálida y confortable, ubicada en el
-          fondo de un predio totalmente perimetrado. El jardín, la pileta, la parrilla y el fogón son de uso exclusivo
-          para vos y tu grupo. Estamos a 2 km del Cerro La Movediza y a 10 minutos del centro comercial.
+          ¿Buscás hospedarte en Tandil? Te ofrecemos una vivienda equipada, cálida y confortable, ubicada al fondo de un
+          predio independiente y totalmente perimetrado. El jardín, la pileta, la parrilla y el fogón son de uso exclusivo
+          para vos y tu grupo. Estamos en una zona muy tranquila y segura, a 10 minutos del centro y a 2 km del Cerro La
+          Movediza.
         </p>
         <app-botones-contacto class="mt-8" [mensaje]="mensaje" textoWhatsapp="Consultar fechas" />
       </div>
@@ -92,12 +93,12 @@ export class Estadias {
     {
       icono: 'cama',
       titulo: 'Habitación en planta alta',
-      texto: 'Para 3 personas, con cama de dos plazas y sofá cama, smart TV y aire acondicionado frío/calor.',
+      texto: 'Con cama de dos plazas, smart TV y aire acondicionado frío/calor.',
     },
     {
       icono: 'personas',
       titulo: 'Salón comedor',
-      texto: 'Amplia mesa para 8, dos camas nido individuales (4 plazas), smart TV, calefactor y ventilador.',
+      texto: 'Amplia mesa, camas nido individuales, smart TV, calefactor y ventilador.',
     },
     {
       icono: 'cocina',
