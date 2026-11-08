@@ -20,7 +20,7 @@ import { Mapa } from '../shared/mapa';
           <app-icono nombre="ubicacion" class="size-4" /> Villa Italia · Tandil
         </p>
         <h1 class="mt-5 font-display text-[2.6rem] leading-[1.05] tracking-tight text-balance text-bosque sm:text-6xl xl:text-7xl">
-          Alojamiento temporario con pileta y fogón en <em class="text-terracota">Tandil</em>
+          Alojamiento con pileta y fogón en <em class="text-terracota">Tandil</em>
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-tinta/75">
           Vivienda equipada para <strong class="text-tinta">hasta 6 huéspedes</strong>, ubicada en un predio
